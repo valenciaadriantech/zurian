@@ -3,62 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZURÎAN | Where Style Meets Sustainability</title>
+  <title>ZURÎAN — Future-Ready Digital Systems</title>
+  <meta name="description" content="ZURÎAN builds premium, intelligent digital products for the next generation of businesses." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: 'Georgia', serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f6f4f1;
-      color: #1a1a1a;
+    :root {
+      --bg: #0b0d10;
+      --panel: #12151b;
+      --text: #e6e6e6;
+      --muted: #9aa0aa;
+      --accent: #8b5cf6;
+      --accent-soft: rgba(139,92,246,0.15);
     }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(circle at top, #141821, var(--bg));
+      color: var(--text);
+      line-height: 1.6;
+    }
+
     header {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1200x500?text=ZUR%C3%8AN+Luxury');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 90px 20px;
+      padding: 6rem 1.5rem 4rem;
       text-align: center;
     }
+
     header h1 {
-      font-size: 3rem;
-      letter-spacing: 4px;
-      margin-bottom: 10px;
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
     }
+
     header p {
+      max-width: 720px;
+      margin: 1.5rem auto 2.5rem;
+      color: var(--muted);
       font-size: 1.1rem;
-      opacity: 0.9;
     }
+
+    .cta {
+      display: inline-block;
+      padding: 0.9rem 1.6rem;
+      background: linear-gradient(135deg, var(--accent), #6d28d9);
+      color: white;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 0 40px var(--accent-soft);
+    }
+
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
+      padding: 4.5rem 1.5rem;
+      max-width: 1200px;
       margin: auto;
     }
-    h2 {
-      font-weight: 400;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-    }
+
     .grid {
       display: grid;
+      gap: 2rem;
+    }
+
+    .features {
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
     }
-    .item {
-      background: #fff;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      text-align: center;
+
+    .card {
+      background: linear-gradient(180deg, #151924, var(--panel));
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.35);
     }
-    .item img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
+
+    .card h3 {
+      margin-bottom: 0.6rem;
     }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .image-panel {
+      height: 220px;
+      border-radius: 16px;
+      margin-bottom: 1.2rem;
+      background-size: cover;
+      background-position: center;
+      filter: saturate(1.1) contrast(1.05);
+    }
+
+    .pricing {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .price {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+
     footer {
-      background: #1a1a1a;
-      color: #eaeaea;
+      padding: 3rem 1.5rem;
       text-align: center;
-      padding: 40px 20px;
-      f
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ZURÎAN</h1>
+  <p>Designing intelligent, scalable digital systems for founders, brands, and organizations shaping the future.</p>
+  <a href="#pricing" class="cta">Request Access</a>
+</header>
+
+<section>
+  <div class="grid features">
+    <div class="card">
+      <div class="image-panel" style="background-image:url('https://images.unsplash.com/photo-1555949963-aa79dcee981c');"></div>
+      <h3>Future‑First Architecture</h3>
+      <p>Built to scale from day one using modern, secure, and adaptable system design.</p>
+    </div>
+    <div class="card">
+      <div class="image-panel" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475');"></div>
+      <h3>Premium Product Design</h3>
+      <p>Minimal, bold, and purposeful interfaces that communicate trust and authority.</p>
+    </div>
+    <div class="card">
+      <div class="image-panel" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');"></div>
+      <h3>Business‑Aligned Systems</h3>
+      <p>Every build is aligned with monetization, growth, and long‑term value creation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2 style="text-align:center; margin-bottom:2.5rem;">Pricing</h2>
+  <div class="grid pricing">
+    <div class="card">
+      <h3>Starter</h3>
+      <p class="price">$499</p>
+      <p>High‑quality landing experience for early‑stage ideas and MVPs.</p>
+    </div>
+    <div class="card">
+      <h3>Professional</h3>
+      <p class="price">$1,499</p>
+      <p>Full website system with branding, UX optimization, and scalability.</p>
+    </div>
+    <div class="card">
+      <h3>Enterprise</h3>
+      <p class="price">Custom</p>
+      <p>End‑to‑end digital infrastructure tailored for growth‑focused organizations.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 ZURÎAN. All rights reserved.
+</footer>
+
+</body>
+</html>
