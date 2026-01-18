@@ -2,62 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZURÎAN | Where Style Meets Sustainability</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZURÎAN — Quiet Elegance</title>
+  <meta name="description" content="ZURÎAN is a fashion, footwear, and fragrance concept rooted in refined simplicity, sustainability, and timeless appeal." />
+
+  <!-- Elegant, fast, brand-first: single file, no JS -->
   <style>
-    body {
-      font-family: 'Georgia', serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f6f4f1;
-      color: #1a1a1a;
+    :root{
+      --bg:#0c0f14;
+      --panel:#121722;
+      --text:#e7e7e7;
+      --muted:#9aa0aa;
+      --accent:#c9b27c; /* muted gold */
     }
-    header {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1520974735194-6c7b0d2d8c4c');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      padding: 90px 20px;
-      text-align: center;
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Inter,sans-serif;
+      background: radial-gradient(circle at top, #151a26, var(--bg));
+      color:var(--text);
+      line-height:1.7;
     }
-    header h1 {
-      font-size: 3rem;
-      letter-spacing: 4px;
-      margin-bottom: 10px;
+    main{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:3rem 1.5rem;
     }
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
+    .philosophy{
+      font-size:.85rem;
+      letter-spacing:.18em;
+      color:var(--accent);
+      margin-bottom:1.6rem;
+      font-weight:600;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+    h1{
+      font-size:clamp(2.6rem,6vw,4rem);
+      letter-spacing:-.03em;
+      margin-bottom:1.2rem;
     }
-    h2 {
-      font-weight: 400;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
+    .lead{
+      max-width:760px;
+      color:var(--muted);
+      font-size:1.05rem;
+      margin-bottom:2.6rem;
     }
-    .pillars, .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
+    section{
+      max-width:900px;
+      margin-top:2.5rem;
     }
-    .card, .item {
-      background: #fff;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      text-align: center;
+    .meta{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:1.2rem;
+      margin-top:2.5rem;
     }
-    .item img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
+    .card{
+      background:linear-gradient(180deg,#161c2b,var(--panel));
+      border-radius:16px;
+      padding:1.6rem;
     }
-    footer {
-      background: #1a1a1a;
-      color: #eaeaea;
-      text-align: center;
-      padding: 
+    .card h3{
+      margin-bottom:.4rem;
+      font-size:1rem;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:var(--accent);
+    }
+    .card p{
+      font-size:.95rem;
+      color:var(--muted);
+    }
+    footer{
+      margin-top:4rem;
+      font-size:.85rem;
+      color:#6b7280;
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <div class="philosophy">L’élégance tranquille · Lo stile che resta</div>
+
+  <h1>ZURÎAN</h1>
+
+  <p class="lead">
+    Quiet elegance. Enduring style. ZURÎAN is a fashion, footwear, and fragrance concept
+    built on refined simplicity, sustainability, and timeless appeal. Founded with intention,
+    the brand embodies a calm yet confident approach to modern luxury — where quality,
+    restraint, and purpose come first.
+  </p>
+
+  <section>
+    <div class="meta">
+      <div class="card">
+        <h3>Status</h3>
+        <p>Planning & brand development</p>
+      </div>
+      <div class="card">
+        <h3>Focus</h3>
+        <p>Clothing · Footwear · Fragrance</p>
+      </div>
+      <div class="card">
+        <h3>Vision</h3>
+        <p>Curated, exclusive collections serving fashion-conscious youth and boutique partners through digital and physical spaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 ZURÎAN</footer>
+</main>
+
+</body>
+</html>
